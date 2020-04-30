@@ -47,7 +47,8 @@ body img {
   border-radius: 6px; }
 
 .noscroll {
-  overflow: hidden; }
+  /* overflow: hidden; */
+ }
 
 .title-content {
   align-items: center; }
