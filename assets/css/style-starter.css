@@ -2,14 +2,24 @@
 html {
   scroll-behavior: smooth; }
 
+  @font-face {
+    font-family: 'Roboto-Light';
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+  }
+
+  @font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url("../fonts/Oswald/static/Oswald-SemiBold.ttf");
+  }
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto',Sans-serif;
-  font-weight: 700; }
+  font-family: 'Oswald-SemiBold';
+  /* font-weight: 700; } */
+}
 body {
   overflow-x: hidden;
 
@@ -18,7 +28,7 @@ body,
 body a,
 body li,
 body p, .btn, input {
-  font-family: 'Roboto',Sans-serif; }
+  font-family: 'Roboto-Light',Sans-serif; }
 
 body p {
   line-height: 26px;
@@ -150,6 +160,12 @@ h3.hny-title.two {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+
+
+  .oswald-bold {
+    font-family: 'Oswald-SemiBold';
+  }
 
 .fa {
   display: inline-block;
@@ -2773,13 +2789,13 @@ h3.hny-title.two {
     min-height: 44em;
     position: relative;
     z-index: 1; }
-  .w3l-banner-slider-main .carousel-item {
-    background: url(../images/banners/banner.jpeg) no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;}
+  .w3l-banner-slider-main {
+    background: url("../images/banners/main-banner.jpg") no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;}
   .w3l-banner-slider-main .carousel-item.item2 {
     background: url(../images/bg2.jpg) no-repeat;
     background-size: cover;
@@ -2801,7 +2817,7 @@ h3.hny-title.two {
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover; }
-  .w3l-banner-slider-main .carousel-item:before {
+  /* .w3l-banner-slider-main .carousel-item:before {
     content: "";
     background: rgba(16, 16, 16, 0.470588);
     position: absolute;
@@ -2809,7 +2825,7 @@ h3.hny-title.two {
     min-height: 100%;
     left: 0;
     right: 0;
-    z-index: -1; }
+    z-index: -1; } */
   .w3l-banner-slider-main .carousel-caption h3 {
     font-size: 60px;
     text-transform: capitalize;
@@ -3405,7 +3421,8 @@ button::-moz-focus-inner {
   align-items: center; }
 
 .video-gd-right {
-  background: url(../images/bg4.jpg) no-repeat center;
+  /* background: url(../images/bg4.jpg) no-repeat center; */
+  background: url(../images/banners/banner.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -3421,7 +3438,7 @@ button::-moz-focus-inner {
   -o-border-radius: 0px 30px 30px 0px;
   -ms-border-radius: 0px 30px 30px 0px; }
 
-.video-gd-right::before {
+/* .video-gd-right::before {
   content: "";
   background: rgba(14, 16, 19, 0.72);
   position: absolute;
@@ -3433,7 +3450,7 @@ button::-moz-focus-inner {
   border-radius: 0px 30px 30px 0px;
   -webkit-border-radius: 0px 30px 30px 0px;
   -o-border-radius: 0px 30px 30px 0px;
-  -ms-border-radius: 0px 30px 30px 0px; }
+  -ms-border-radius: 0px 30px 30px 0px; } */
 
 span.video-play-icon {
   background: #fff;
@@ -12012,7 +12029,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 .contact-form{
-  background: #fff;
+  background: transparent;
   margin-top: 10%;
   margin-bottom: 5%;
   width: 70%;
@@ -12069,4 +12086,30 @@ a.text-dark:hover, a.text-dark:focus {
 
 .my-footer p {
   color:#16ad1b;
+}
+
+.add-banner {
+  background-image: url("../images/banners/video-banner.jpg");
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-background {
+  width: 100%;
+  /*height:300px;
+  background: url(../images/banners/main-banner.jpeg) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover; */
+}
+
+.sign-up{
+  height:40px;
+  background-color: #16ad1b;
+}
+.sign-up p {
+  color: white;
 }
