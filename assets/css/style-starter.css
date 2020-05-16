@@ -4423,7 +4423,7 @@ span.fa.fa-play {
 .w3l-services-2 .port-text-cards button {
   margin-right: 10px; }
 
-.w3l-services-2 button.price-course.btn {
+.w3l-services-2 .price-course.btn {
   color: #fff;
   background: #16ad1b;
   border: none;
@@ -4435,7 +4435,7 @@ span.fa.fa-play {
   line-height: 30px;
   height: 40px; }
 
-.w3l-services-2 button.price-course.btn:hover {
+.w3l-services-2 .price-course.btn:hover {
   background: #252b33;
   transition: 0.3s ease; }
 
